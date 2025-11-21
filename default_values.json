@@ -1,9 +1,14 @@
 {
-  "Year_Birth": 1970.5,
-  "Income": 54800.3,
-  "Kidhome": 0.5,
-  "Teenhome": 0.7,
-  "Recency": 30.1,
-  "Education": "2",
-  "Marital_Status": "1"
+  "NumDealsPurchases": 2,
+  "NumWebPurchases": 4,
+  "NumCatalogPurchases": 1,
+  "NumStorePurchases": 6,
+  "NumWebVisitsMonth": 5,
+  "AcceptedCmp3": 0,
+  "AcceptedCmp4": 0,
+  "AcceptedCmp5": 0,
+  "AcceptedCmp1": 0,
+  "AcceptedCmp2": 0,
+  "Complain": 0,
+  "Customer_Tenure_Days": 4500
 }
