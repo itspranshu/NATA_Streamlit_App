@@ -8,8 +8,8 @@ import os
 # ================================
 # FILE PATHS (Your Desktop)
 # ================================
-MODEL_FILE = r"C:\Users\psngh\OneDrive\Desktop\nata_model.pkl"
-FEATURE_FILE = r"C:\Users\psngh\OneDrive\Desktop\nata_features.json"
+MODEL_FILE = "nata_model.pkl"
+FEATURE_FILE = "nata_features.json"
 
 # ================================
 # Streamlit Page Setup
@@ -77,3 +77,4 @@ if st.button("🔮 Predict Customer Spending"):
             st.info("🛒 **Mid-value customer** → Recommend moderate discounts, combo offers.")
         else:
             st.info("📌 **Low-value customer** → Awareness campaigns, entry-level offers.")
+
