@@ -54,7 +54,6 @@ user_input_vars = [
     "Teenhome",
     "Recency",
     "NumWebPurchases",
-    "NumCatalogPurchases",
     "NumStorePurchases"
 ]
 
@@ -101,5 +100,6 @@ if st.button("🔮 Predict Customer Spending"):
 # Footer
 st.markdown("---")
 st.markdown("**Developed by Prashant Singh (IIM Sirmaur)**  \nModel Training ▪ Clustering ▪ Deployment")
+
 
 
