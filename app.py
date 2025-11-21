@@ -6,7 +6,7 @@ import json
 import os
 
 # ================================
-# FILE PATHS (Desktop)
+# FILE PATHS
 # ================================
 MODEL_FILE = "nata_model.pkl"
 FEATURE_FILE = "nata_features.json"
@@ -117,3 +117,4 @@ st.markdown(
     "**Developed by Prashant Singh (IIM Sirmaur)**  \n"
     "Model Training ▪ Clustering Analysis ▪ Streamlit Deployment ▪ UI Design"
 )
+
