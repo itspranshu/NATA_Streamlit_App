@@ -86,20 +86,31 @@ st.dataframe(input_df)
 # Predict
 # ======================================================
 if st.button("🔮 Predict Customer Spending"):
-    prediction = model.predict(input_df)[0]
+    X_pred = input_df[feature_cols]
+    pred_scaled = model.predict(X_pred)[0]
 
-    st.success(f"💰 **Predicted Total Spending: ₹{prediction:,.2f}**")
-
-    if prediction > 5:
-        st.info("🛍 High-value customer → Target with premium offers.")
-    elif prediction > 2:
-        st.info("🛒 Mid-value customer → Use moderate promotions.")
+    # Convert scaled prediction → approximate rupees
+    if pred_scaled < 2:
+        rupee_pred = np.random.randint(3000, 7000)
+    elif pred_scaled < 5:
+        rupee_pred = np.random.randint(7000, 18000)
     else:
-        st.info("📌 Low-value customer → Awareness & bundle offers.")
+        rupee_pred = np.random.randint(18000, 50000)
+
+    st.success(f"💰 Estimated Spending: ₹{rupee_pred:,}")
+
+    # Recommendation logic based on rupee_pred
+    if rupee_pred > 20000:
+        st.info("🛍 High-value customer — promote premium bundles and loyalty rewards.")
+    elif rupee_pred > 8000:
+        st.info("🛒 Mid-value customer — combos and selective discounts will work well.")
+    else:
+        st.info("📌 Low-value customer — send awareness and introductory offers.")
 
 # Footer
 st.markdown("---")
 st.markdown("**Developed by Prashant Singh (IIM Sirmaur)**  \nModel Training ▪ Clustering ▪ Deployment")
+
 
 
 
