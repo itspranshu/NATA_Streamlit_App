@@ -85,8 +85,9 @@ if st.button("🔮 Predict Customer Spending"):
 st.markdown("---")
 st.markdown(
     "**Developed by Prashant Singh (IIM Sirmaur)**  \n"
-    "Model Training ▪ Clustering Analysis ▪ Hyperparameter Tuning ▪ Streamlit Deployment"
+    "Model Training ▪ Clustering Analysis ▪ Streamlit Deployment"
 )
+
 
 
 
