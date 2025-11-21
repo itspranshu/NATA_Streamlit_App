@@ -48,6 +48,7 @@ else:
 # Only 7 variables for user input
 # ======================================================
 user_input_vars = [
+    "Year_Birth"
     "Income",
     "Kidhome",
     "Teenhome",
@@ -100,3 +101,4 @@ if st.button("🔮 Predict Customer Spending"):
 # Footer
 st.markdown("---")
 st.markdown("**Developed by Prashant Singh (IIM Sirmaur)**  \nModel Training ▪ Clustering ▪ Deployment")
+
