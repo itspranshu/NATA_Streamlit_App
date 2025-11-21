@@ -78,3 +78,15 @@ if st.button("🔮 Predict Customer Spending"):
         else:
             st.info("📌 **Low-value customer** → Awareness campaigns, entry-level offers.")
 
+
+# -------------------------
+# Footer
+# -------------------------
+st.markdown("---")
+st.markdown(
+    "**Developed by Prashant Singh (IIM Sirmaur)**  \n"
+    "Model Training ▪ Clustering Analysis ▪ Hyperparameter Tuning ▪ Streamlit Deployment"
+)
+
+
+
